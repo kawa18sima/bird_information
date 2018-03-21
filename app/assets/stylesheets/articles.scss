@@ -1,6 +1,19 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.article-index{
+  text-align: center;
+  line-height: 60px;
+  width:92%;
+  height:60px;
+  margin:30px 50px;
+  background-color: white;
+  border-radius: 25px;
+  h3{
+    font-size: 23px
+  }
+}
+
 #article{
+  height:100%;
+  width:100%;
   background-color:white;
+  border-raddius:10px;
 }
