@@ -1,0 +1,7 @@
+h2.chage_user = link_to 'ユーザー編集', edit_user_registration_path
+
+.mypage-contents
+  h2= current_user.name + "さんの記事一覧"
+
+  - @articles.each do |article|
+    h3.article-index= link_to article.title, article
