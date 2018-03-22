@@ -14,9 +14,9 @@ html
       = link_to 'ホーム', root_path
     -if user_signed_in?
       .after-login.contents
-        = link_to '新規投稿', new_article_path
-      .after-login.contents
         = link_to 'ログアウト', destroy_user_session_path, method: :delete
+      .after-login.contents
+        = link_to '新規投稿', new_article_path
     -else
       .after-login.contents
         = link_to '新規登録', new_user_registration_path
