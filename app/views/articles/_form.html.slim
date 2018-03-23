@@ -13,4 +13,8 @@
     = f.label :article
     = f.text_area :article, size: '20x15'
     script var simplemde = new SimpleMDE();
+  .form-group
+    strong.check_box 下書き保存
+    |
+    = f.check_box :complete
   .actions = f.submit
