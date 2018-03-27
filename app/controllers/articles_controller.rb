@@ -61,6 +61,10 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def search
+    @articles = Article.where('title LIKE ?', "%#{params[:name]}%")
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article

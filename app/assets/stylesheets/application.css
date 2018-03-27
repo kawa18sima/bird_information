@@ -51,3 +51,12 @@ body{
     color:#000000;
   }
 }
+
+.search{
+  float: left;
+}
+
+.search_submit{
+  width:215px;
+  left:100px;
+}
