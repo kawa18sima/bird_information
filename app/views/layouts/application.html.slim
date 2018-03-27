@@ -13,6 +13,10 @@ html
     .top.contents
       = link_to 'ホーム', root_path
     -if user_signed_in?
+      .top.contents
+        = form_tag search_articles_path, method: :get do
+          .search = text_field_tag :name
+          .search_submit= submit_tag '検索'
       .after-login.contents
         = link_to 'ログアウト', destroy_user_session_path, method: :delete
       .after-login.contents
